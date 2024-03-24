@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTHY: Punching Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="sideBar">
+            <div class="coinTossContainer">
+                <div class="coinTossForm">
+                    <form>
+                        <select id="coin">
+                            <option id="coinHeads" value="Heads">HEADS</option>
+                            <option id="coinTails" value="Tails">TAILS</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="coinTossButton">
+                    <button id="coinToss" onclick="tossCoin()">TOSS THE COIN!</button>
+                </div>
+                <div class="coinTossOutput">
+                    <p id="coinFlipped">Flip the coin!</p>
+                    <p id="coinOutput"></p>
+                    <p id="coinAdvantage"></p>
+                </div>
+            </div>
+            <div class="logContainer"></div>
+            <div class="resetButton">
+                <button id="reset" onclick="resetBtn()">RESET GAME</button>
+            </div>
+            <p id="credits">Group AEMSU - Anadon, Emberga, Mesias, Suelto, Urakami.</p>
+        </div>
+        <div class="mainGame">
+            <div class="healthBars">
+                <div class="playerHPBar">
+                    <p id="playerHPValue"></p>
+                    <p id="playerSValue"></p>
+                </div>
+                <div class="opponentHPBar">
+                    <p id="opponentHPValue"></p>
+                    <p id="opponentSValue"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

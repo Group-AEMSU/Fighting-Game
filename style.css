@@ -6,6 +6,15 @@
     overflow: hidden;
 }
 
+.mainmenu{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("menubg.png");
+    background-color: black;
+    background-size: cover;
+    position: fixed;
+}
+
 .container{
     background-color: black;
     height: 100vh;
@@ -44,7 +53,7 @@
 }
 
 .coinTossOutput{
-    height: 5vh;
+    height: 15vh;
 }
 
 .coinTossContainer #coin{
@@ -80,6 +89,19 @@
     border: 0;
     border-radius: 5px;
     display: flex;
+}
+
+.logContainer{
+    margin: 2vh;
+    margin-top: 35vh;
+    background-color: rgb(57, 20, 20);
+    width: 15vw;
+    height: 45vh;
+    padding: 2vh;
+    border-radius: 5px;
+    border: solid 5px rgb(77, 25, 25);
+    position: absolute;
+    display: inline;
 }
 
 .sideBar #reset{

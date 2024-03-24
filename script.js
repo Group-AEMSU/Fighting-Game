@@ -1,10 +1,3 @@
-// CHARACTERS 1-5 : OFFENSIVE TO DEFENSIVE
-// Chaos: HIGHEST ATTACK, LITTLE TO NO DEFENSE (Purely high attack)
-// Soul: HIGH ATTACK, SOME DEFENSE (Spends a turn enhancing their attack)
-// Default: MODERATE ATTACK, MODERATE DEFENSE (Default character)
-// Nihil: SOME ATTACK, HIGH DEFENSE (Debuffs the enemy)
-// Preserve: LITTLE TO NO ATTACK, HIGHEST DEFENSE (Parries and returns the damage)
-
 // Coin Flip
 var coinSelect;
 var coinResult;
@@ -27,6 +20,7 @@ function tossCoin(){
     }
     
     document.getElementById('coinFlipped').innerHTML = coinResult;
+    
     
     if (document.getElementById('coin').value == "Heads"){
         document.getElementById("coinOutput").innerHTML = "You chose Heads!";
@@ -58,6 +52,9 @@ function calculateDamage(){
     Damage = (Math.round(Math.random()*100000000) % 5) + 1;
     return Damage;
 }
+
+// log
+
 
 // reset BTN
 
