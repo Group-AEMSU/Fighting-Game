@@ -6,6 +6,10 @@
     overflow: hidden;
 }
 
+/* MAIN MENU */
+/* MAIN MENU */
+/* MAIN MENU */
+
 .mainmenu{
     height: 100vh;
     width: 100vw;
@@ -15,7 +19,8 @@
     position: absolute;
 }
 
-#credits{
+/* credits */ 
+#creditsmenu{
     background-color: black;
     height: 40vh;
     width: 40vw;
@@ -24,12 +29,20 @@
     font-weight: 850;
     margin-left: 54vw;
     opacity: 1;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    align-self: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1vh;
 }
 
 #chead{
     font-size: 1.5em;
     margin-top: 1vh;
 }
+
+/* randomized quote */
 #qote{
     padding: 1vh;
     height: 7vh;
@@ -46,6 +59,7 @@
     background-color: rgb(147, 55, 55);
 }
 
+/* play button */
 #playButton {
     background-color: rgb(123, 109, 109);
     border: none;
@@ -76,17 +90,25 @@
     text-decoration: underline;
 }
 
+/* MAIN GAME */
+/* MAIN GAME */
+/* MAIN GAME */
+
 .container{
     background-color: black;
     height: 100vh;
     width: 100vw;
 }
+
+/* Side bar for cointoss and log */
 .sideBar{
     background-color: rgb(21, 21, 21);
     width: 20vw;
     height: 100vh;
     position: fixed;
 }
+
+/* COIN TOSS */
 .coinTossContainer{
     margin: 2vh;
     background-color: rgb(57, 20, 20);
@@ -105,18 +127,22 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Dropdown */
 .coinTossForm{
     height: 5vh;
 }
 
+/* Button to toss coin */
 .coinTossButton{
     height: 5vh;
 }
 
+/* Results from the coin toss */
 .coinTossOutput{
     height: 15vh;
 }
 
+/* Dropdown */
 .coinTossContainer #coin{
     align-self: center;
     font-family: "Poppins", sans-serif;
@@ -132,10 +158,12 @@
     padding-right: 4.5vw;
 }
 
+/* Result from the coin toss */
 #coinFlipped{
     margin-top: 2vh;
 }
 
+/* Button to toss coin */
 .coinTossContainer button{
     font-family: "Poppins", sans-serif;
     font-weight: 900;
@@ -152,6 +180,7 @@
     display: flex;
 }
 
+/* LOG */
 .logContainer{
     margin: 2vh;
     margin-top: 40vh;
@@ -165,6 +194,7 @@
     display: inline;
 }
 
+/* Reset button */
 .sideBar #reset{
     margin: 3.5vh;
     margin-top: 89vh;
@@ -180,6 +210,7 @@
     padding-right: 4.5vw;
 }
 
+/* Reset button */
 #credits{
     color: rgb(255, 255, 255);
     font-size: 0.8em;
@@ -190,6 +221,7 @@
     opacity: 50%;
 }
 
+/* CONTAINER FOR MAIN GAME */
 .mainGame{
     background-image: url(mainBG.png);
     background-size: cover;
@@ -198,6 +230,7 @@
     margin-left: 20vw;
 }
 
+/* Container for HP Bars at the top */
 .healthBars{
     width: 80vw;
     height: 35vh;
@@ -205,6 +238,7 @@
     display: flex;
 }
 
+/* Player HP Bar */
 #playerHPBar{
     width: 30vw;
     height: 29vh;
@@ -215,6 +249,7 @@
     margin-left: 2.5vh;
 }
 
+/* Opponent HP Bar */
 #opponentHPBar{
     width: 30vw;
     height: 29vh;
@@ -224,6 +259,7 @@
     margin-top: 2.5vh;
 }
 
+/* Container for attack and defend at the bottom */
 .mainAction{
     margin-top: 10vh;
     width: 80vw;
@@ -231,6 +267,7 @@
     display: flex;
 }
 
+/* ATTACK! */
 .attackButton{
     width: 40vw;
     height: 23vh;
@@ -247,6 +284,7 @@
     height: 24vh;
 }
 
+/* DEFEND! */
 .defendButton{
     width: 40vw;
     height: 23vh;
@@ -263,6 +301,7 @@
     height: 24vh;
 }
 
+/* ATTACK button */
 #attackAction{
     width: 40vw;
     height: 23vh;
@@ -271,6 +310,7 @@
     border-radius: 50px;
 }
 
+/* DEFEND button */
 #defendAction{
     width: 40vw;
     height: 23vh;
@@ -279,6 +319,8 @@
     border-radius: 50px;
 }
 
+
+/* CONTAINER FOR MESSAGES */
 .turnActions{
     margin: auto;
     height: 20vh;
@@ -298,6 +340,7 @@
     font-weight: 800;
 }
 
+/* HP value for player */
 #playerHPValue{
     color: black;
     font-family: "Poppins", sans-serif;
@@ -307,6 +350,7 @@
     font-size: 3em;
 }
 
+/* HP value for opponent */
 #opponentHPValue{
     color: black;
     font-family: "Poppins", sans-serif;
@@ -318,6 +362,7 @@
     font-size: 3em;
 }
 
+/* TURN COUNTER! */
 .infoBar{
     width: 20vw;
     height: 10vh;
@@ -335,6 +380,7 @@
     font-size: 3em;
 }
 
+/* Number of turns */
 #turnNum{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -345,6 +391,7 @@
     text-align: center;
 }
 
+/* LOG ITSELF */
 #logHead{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -353,6 +400,7 @@
     font-size: 1em;
 }
 
+/* The positions of the log */
 .logSection{
     height: 7vh;
     width: 15vw;
@@ -362,6 +410,7 @@
     border-radius: 1vh;
 }
 
+/* The turn that this action happened */
 .logturn{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -379,12 +428,14 @@
     float: left;
 }
 
+/* The action that happened on that turn */
 .logdivinfo{
     height: 6vh;
     width: 12vw;
     float: left;
 }
 
+/* Player inflict */
 .logpdmg{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -395,6 +446,7 @@
     float: left;
 }
 
+/* Opponent inflict */
 .logodmg{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -404,6 +456,7 @@
     float: left;
 }
 
+/* Final result of that turn */
 .logtdmg{
     color: white;
     font-family: "Poppins", sans-serif;
