@@ -272,6 +272,11 @@ function resetBtn(){
     document.getElementById("turnNum").innerHTML = 0;
 
     // reset all logs
+    l1emp = false;
+    l2emp = false;
+    l3emp = false;
+    l4emp = false;
+    l5emp = false;
     turnlog1 = 0;
     turnlog2 = 0;
     turnlog3 = 0;
