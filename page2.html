@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALTHY: Punching Game</title>
+    <title>ATLHY: Punching Game</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="icon.png">
 </head>
@@ -11,15 +11,15 @@
     <div class="container">
         <div class="sideBar">
             <div class="coinTossContainer">
-                <div class="coinTossForm">
+                <div class="coinTossForm"> <!-- Dropdown -->
                     <form>
-                        <select id="coin">
+                        <select id="coin"> <!-- Options -->
                             <option id="coinHeads" value="Heads">HEADS</option>
                             <option id="coinTails" value="Tails">TAILS</option>
                         </select>
                     </form>
                 </div>
-                <div class="coinTossButton">
+                <div class="coinTossButton"> <!-- Button to toss coin -->
                     <button id="coinToss" onclick="tossCoin()">TOSS THE COIN!</button>
                 </div>
                 <div class="coinTossOutput">
@@ -28,23 +28,86 @@
                     <p id="coinAdvantage"></p>
                 </div>
             </div>
-            <div class="logContainer"></div>
-            <div class="resetButton">
+            <div class="logContainer">
+                <p id="logHead">LOG</p>
+                <div id="log5" class="logSection"> <!-- log section -->
+                    <div class="logdivturn"><p id="log5turn" class="logturn"></p></div> <!-- Log turn number -->
+                    <div class="logdivinfo"> <!-- Info of the logs -->
+                        <p id="log5pdmg" class="logpdmg"></p>
+                        <p id="log5odmg" class="logodmg"></p>
+                        <p id="log5tdmg" class="logtdmg"></p>
+                    </div>
+                </div>
+                <div id="log4" class="logSection"> <!-- log section -->
+                    <div class="logdivturn"><p id="log4turn" class="logturn"></p></div> <!-- Log turn number -->
+                    <div class="logdivinfo"> <!-- Info of the logs -->
+                        <p id="log4pdmg" class="logpdmg"></p>
+                        <p id="log4odmg" class="logodmg"></p>
+                        <p id="log4tdmg" class="logtdmg"></p>
+                    </div>
+                </div>
+                <div id="log3" class="logSection"> <!-- log section -->
+                    <div class="logdivturn"><p id="log3turn" class="logturn"></p></div> <!-- Log turn number -->
+                    <div class="logdivinfo"> <!-- Info of the logs -->
+                        <p id="log3pdmg" class="logpdmg"></p>
+                        <p id="log3odmg" class="logodmg"></p>
+                        <p id="log3tdmg" class="logtdmg"></p>
+                    </div>
+                </div>
+                <div id="log2" class="logSection"> <!-- log section -->
+                    <div class="logdivturn"><p id="log2turn" class="logturn"></p></div> <!-- Log turn number -->
+                    <div class="logdivinfo"> <!-- Info of the logs -->
+                        <p id="log2pdmg" class="logpdmg"></p>
+                        <p id="log2odmg" class="logodmg"></p>
+                        <p id="log2tdmg" class="logtdmg"></p>
+                    </div>
+                </div>
+                <div id="log1" class="logSection"> <!-- log section -->
+                    <div class="logdivturn"><p id="log1turn" class="logturn"></p></div> <!-- Log turn number -->
+                    <div class="logdivinfo"> <!-- Info of the logs -->
+                        <p id="log1pdmg" class="logpdmg"></p>
+                        <p id="log1odmg" class="logodmg"></p>
+                        <p id="log1tdmg" class="logtdmg"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="resetButton"> <!-- reset button -->
                 <button id="reset" onclick="resetBtn()">RESET GAME</button>
             </div>
-            <p id="credits">Group AEMSU - Anadon, Emberga, Mesias, Suelto, Urakami.</p>
+            <p id="credits">Group AEMSU - Anadon, Emberga, Mesias, Suelto, Urakami.</p> <!-- group members -->
         </div>
-        <div class="mainGame">
-            <div class="healthBars">
-                <div class="playerHPBar">
-                    <p id="playerHPValue"></p>
-                    <p id="playerSValue"></p>
+        <div class="mainGame"> 
+            <div class="healthBars"> <!--Health bars -->
+                <div id="playerHPBar"> <!-- player HP bar -->
+                    <i><p id="playerHPValue"></p></i>
                 </div>
-                <div class="opponentHPBar">
-                    <p id="opponentHPValue"></p>
-                    <p id="opponentSValue"></p>
+                <div id="infoBar">
+                    <p id="turn">TURN</p>
+                    <p id="turnNum">00</p>
+                    <p id="playerWin"></p>
+                    <p id="opponentWin"></p>
+                </div>
+                <div id="opponentHPBar"> <!-- opponent HP bar -->
+                    <i><p id="opponentHPValue"></p></i>
                 </div>
             </div>
+            <div class="turnActions"> <!-- messages -->
+                <p id="playerDo">X</p>
+                <p id="playerInfliction">X</p>
+                <p id="opponentInfliction">X</p>
+                <p id="totalInfliction">X</p>
+            </div>
+            <div class="mainAction"> <!-- attack and defend buttons -->
+                <div class="attackButton">
+                    <button id="attackAction" onclick="playerAttack()"></button>
+                </div>
+                <div class="defendButton">
+                    <button id="defendAction" onclick="playerDefend()"></button>
+                </div>
+            </div>
+            <audio hidden autoplay loop> <!-- bg music-->
+                <source src="battle.mp3" type="audio/mp3">
+            </audio>
         </div>
     </div>
     <script src="script.js"></script>

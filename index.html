@@ -8,6 +8,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mainmenu"></div>
+    <div class="mainmenu">
+        <div id="qote">
+            <h1 id="teggst"></h1>
+        </div>
+        <button id="playButton" onclick="window.open('page2.html', '_self')"><b>PLAY</b></button>
+        <div id="credits">
+            <p id="chead">ATLHY - Alan, Takki, Leeuan, Hyisham, Yael Game</p>
+            <p id="chead">Group AEMSU of Sodium</p>
+            <p>Urakami, Takashi</p>
+            <p>Mesias, Yael</p>
+            <p>Suelto, Leeuan</p>
+            <p>Emberga, Hyisham</p>
+            <p>Anadon, Alan</p>
+            <p id="chead">Music</p>
+            <p>Menu: Battle! King of the Snowy Hill (HOYO-MiX)</p>
+            <p>Game: Battle! Tournament Winner (HOYO-MiX)</p>
+        </div>
+        <audio hidden autoplay loop> <!-- bg music-->
+            <source src="menu.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script>
+        var x = Math.floor(Math.random() * 10) + 1;
+        switch(x){
+            case 1:
+                document.getElementById("teggst").innerHTML = 'Ang importante ay mahalaga.';
+                break;
+            case 2:
+                document.getElementById("teggst").innerHTML = 'I tend to forget that.. the...';
+                break;
+            case 3:
+                document.getElementById("teggst").innerHTML = 'I was born at a very young age';
+                break;
+            case 4:
+                document.getElementById("teggst").innerHTML = 'Miss u baby';
+                break;
+            case 5:
+                document.getElementById("teggst").innerHTML = 'w4g k4n4ng m4gt4mP0, b00b00b34r owo';
+                break;
+            case 6:
+                document.getElementById("teggst").innerHTML = 'Hello';
+                break;
+            case 7:
+                document.getElementById("teggst").innerHTML = 'la na kong maisip';
+                break;
+            case 8:
+                document.getElementById("teggst").innerHTML = 'Every 60 seconds in africa, a minute passes.';
+                break;
+            case 9:
+                document.getElementById("teggst").innerHTML = 'sometimes, we cant help but feel mad kapag galit tayo.';
+                break;
+            case 10:
+                document.getElementById("teggst").innerHTML = 'bruh';
+                break;
+        }
+            </script>
 </body>
 </html>
