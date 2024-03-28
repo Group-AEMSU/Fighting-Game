@@ -32,6 +32,8 @@
     color: rgb(255, 255, 255);
     font-size: 0.8em;
     font-family: "Poppins", sans-serif;
+    text-align: center;
+    align-items: center;
     margin-bottom: 1vh;
 }
 
